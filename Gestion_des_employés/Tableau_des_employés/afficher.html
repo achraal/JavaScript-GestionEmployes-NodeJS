@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Table des Employés</title>
+    <link rel="shortcut icon" href="mysql.jpg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+    <div class="w-full max-w-6xl bg-white rounded-2xl shadow-xl p-8">
+        <h1 class="text-4xl font-serif font-bold text-center text-gray-800 mb-8">Tableau des Employés</h1>
+        
+        <div class="overflow-x-auto">
+            <table id="empTab" class="min-w-full table-auto border-collapse border border-gray-300 shadow-sm">
+                <thead class="bg-blue-600 text-white">
+                    <tr>
+                        <th class="border border-blue-700 px-6 py-3 text-left font-semibold">Nom & Prénom</th>
+                        <th class="border border-blue-700 px-6 py-3 text-left font-semibold">E-mail</th>
+                        <th class="border border-blue-700 px-6 py-3 text-left font-semibold">Poste</th>
+                        <th class="border border-blue-700 px-6 py-3 text-right font-semibold">Salaire</th>
+                        <th class="border border-blue-700 px-6 py-3 text-left font-semibold">Téléphone</th>
+                        <th class="border border-blue-700 px-6 py-3 text-center font-semibold">Supprimer</th>
+                        <th class="border border-blue-700 px-6 py-3 text-center font-semibold">Modifier</th>
+                    </tr>
+                </thead>
+                <tbody id="empList" class="bg-white">
+                    <!-- Les lignes seront insérées ici par JS -->
+                </tbody>
+                <tfoot id="totalList" class="bg-gray-50 font-semibold text-gray-700">
+                    <!-- Total sera inséré ici -->
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="mt-6 flex justify-end">
+            <button id="reset" 
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                Supprimer Tous
+            </button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

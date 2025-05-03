@@ -1,0 +1,63 @@
+h1{
+    color: seagreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: bolder;
+    position: relative;
+    left: 100px;
+    top: 5px;
+}
+a:hover{
+    color: rgb(98, 17, 173);
+    text-decoration: underline;
+}
+#empSub{
+    color: white;
+    background-color: rgba(0, 128, 0, 0.719);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#empSub:hover{
+    background-color: green;
+}
+label {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    font-weight: bolder
+}
+body {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    background-image: url('../vertical-low-angle-shot-modern-glass-business-buildings-touching-sky.jpg');
+    background-repeat: no-repeat;
+    background-size: 540px;
+}
+form {
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+}
+form input {
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
